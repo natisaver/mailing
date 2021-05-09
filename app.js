@@ -4,7 +4,7 @@ var path = require("path");
 
 var app = express();
 
-app.use(express.static('/public')); //indicates the directory for static items e.g css
+app.use(express.static("public")); //indicates the directory for static items e.g css
 
 app.get("/", function(req,res){
     res.sendFile(__dirname + "/signup.html");
