@@ -42,6 +42,7 @@ app.post("/", function(req,res){
         auth: "nat:9ee2d76c1ab86533ae23608ef12f3c8f-us1"
     }
 
+    //https://nodejs.org/api/https.html#https_https_request_url_options_callback
     const request = https.request(url, options, function(response){
         response.on("data", function(data){
             console.log(JSON.parse(data));
